@@ -1,0 +1,31 @@
+[2026-04-14T09:35:40Z] === ENRICH ITERATION 1 START | repo=hamcrest/JavaHamcrest sha=60454d3c ===
+[2026-04-14T09:35:40Z] [iter=1] PHASE START: enrich repo=hamcrest/JavaHamcrest sha=60454d3c runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/60454d3c-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/60454d3c3e2eac8f3049dfbef2900a989a8b8624.nq.gz
+[2026-04-14T09:35:40Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-14T09:35:43Z] [iter=1] AST store loaded triples=384166 load_secs=3 mem_mb=669 MB
+[2026-04-14T09:35:43Z] [iter=1] Step 2: Finding LSP targets mem_mb=669 MB
+[2026-04-14T09:35:44Z] [iter=1] LSP targets found call_sites=3182 imports=697 extends=58 implements=0 secs=1
+[2026-04-14T09:35:45Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=669 MB
+[2026-04-14T09:35:47Z] [iter=1] Position index built positions=25888 nodes_with_types=32630 secs=2 mem_mb=669 MB
+[2026-04-14T09:35:47Z] [iter=1] Step 3: Starting LSP resolution mem_mb=669 MB already_completed_types=[] already_completed_files=0
+[2026-04-14T09:35:47Z] [iter=1] Resolving target type target_type=call_site count=3182
+[2026-04-14T09:36:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=4 resolved=1 errors=65 current=hamcrest/src/main/java/org/hamcrest/collection/ArrayMatching.java
+[2026-04-14T09:36:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=11 resolved=14 errors=293 current=hamcrest/src/test/java/org/hamcrest/comparator/ComparatorMatcherBuilderTest.java
+[2026-04-14T09:37:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.7 files_done=16 resolved=14 errors=526 current=hamcrest/src/test/java/org/hamcrest/core/IsSameTest.java
+[2026-04-14T09:37:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.3 files_done=26 resolved=47 errors=740 current=hamcrest/src/test/java/org/hamcrest/comparator/ComparatorMatcherTest.java
+[2026-04-14T09:38:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.9 files_done=34 resolved=59 errors=990 current=hamcrest/src/main/java/org/hamcrest/core/IsEqual.java
+[2026-04-14T09:39:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.5 files_done=48 resolved=78 errors=1217 current=hamcrest/src/main/java/org/hamcrest/core/CombinableMatcher.java
+[2026-04-14T09:39:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.0 files_done=60 resolved=88 errors=1432 current=hamcrest/src/main/java/org/hamcrest/collection/IsIterableContainingInAnyOrder.java
+[2026-04-14T09:40:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.5 files_done=70 resolved=94 errors=1635 current=hamcrest/src/test/java/org/hamcrest/number/BigDecimalCloseToTest.java
+[2026-04-14T09:40:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.0 files_done=81 resolved=105 errors=1848 current=hamcrest/src/main/java/org/hamcrest/number/BigDecimalCloseTo.java
+[2026-04-14T09:41:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.6 files_done=96 resolved=113 errors=2051 current=hamcrest/src/main/java/org/hamcrest/core/AllOf.java
+[2026-04-14T09:41:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.1 files_done=114 resolved=137 errors=2249 current=hamcrest/src/test/java/org/hamcrest/core/IsNullTest.java
+[2026-04-14T09:42:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.6 files_done=154 resolved=146 errors=2436 current=docs/javadoc/2.1/script.js
+[2026-04-14T09:42:17Z] [iter=1] Target type resolved target_type=call_site resolved=150 errors=2438 secs=389 mem_mb=669 MB
+[2026-04-14T09:42:17Z] [iter=1] Resolving target type target_type=import_statement count=697
+[2026-04-14T09:42:38Z] [iter=1] Target type resolved target_type=import_statement resolved=0 errors=0 secs=21 mem_mb=669 MB
+[2026-04-14T09:42:38Z] [iter=1] Resolving target type target_type=extends_clause count=58
+[2026-04-14T09:42:45Z] [iter=1] HEARTBEAT target_type=extends_clause elapsed_min=7.1 files_done=3 resolved=7 errors=0 current=hamcrest/src/test/java/org/hamcrest/collection/IsMapWithSizeTest.java
+[2026-04-14T09:42:49Z] [iter=1] Target type resolved target_type=extends_clause resolved=57 errors=0 secs=11 mem_mb=669 MB
+[2026-04-14T09:43:07Z] [iter=1] Step 5: Writing final enrichment file triples=25504
+[2026-04-14T09:43:08Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/60454d3c3e2eac8f3049dfbef2900a989a8b8624.nq.gz size_kb=602
+[2026-04-14T09:43:08Z] [iter=1] PHASE END: enrich elapsed_s=447 elapsed_min=7.5 total_triples=25504
